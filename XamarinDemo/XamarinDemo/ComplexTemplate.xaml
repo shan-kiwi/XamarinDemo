@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDemo.ComplexTemplate">
+    <ContentPage.Content>
+        <ScrollView>
+        <AbsoluteLayout x:Name="Parent" BackgroundColor="White">
+            <BoxView BackgroundColor="DeepSkyBlue" AbsoluteLayout.LayoutBounds="0,0,1,150" AbsoluteLayout.LayoutFlags="WidthProportional"></BoxView>
+            <BoxView BackgroundColor="White" AbsoluteLayout.LayoutBounds=".5,95,100,100" AbsoluteLayout.LayoutFlags="XProportional"></BoxView>
+            <BoxView BackgroundColor="LightGray" AbsoluteLayout.LayoutBounds=".5,100,90,90" AbsoluteLayout.LayoutFlags="XProportional"></BoxView>
+            <Label Text="User Name" AbsoluteLayout.LayoutBounds=".5,200,1,40" AbsoluteLayout.LayoutFlags="WidthProportional" TextColor="Black" HorizontalTextAlignment="Center"></Label>
+            <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Padding="5">
+                <AbsoluteLayout BackgroundColor="DarkGray" AbsoluteLayout.LayoutBounds="0,235,1,40" AbsoluteLayout.LayoutFlags="WidthProportional">
+                    <BoxView BackgroundColor="White" AbsoluteLayout.LayoutBounds=".20,5,30,30" AbsoluteLayout.LayoutFlags="XProportional"></BoxView>
+                    <BoxView BackgroundColor="White" AbsoluteLayout.LayoutBounds=".35,5,30,30" AbsoluteLayout.LayoutFlags="XProportional"></BoxView>
+                    <BoxView BackgroundColor="White" AbsoluteLayout.LayoutBounds=".50,5,30,30" AbsoluteLayout.LayoutFlags="XProportional"></BoxView>
+                    <BoxView BackgroundColor="White" AbsoluteLayout.LayoutBounds=".65,5,30,30" AbsoluteLayout.LayoutFlags="XProportional"></BoxView>
+                    <BoxView BackgroundColor="White" AbsoluteLayout.LayoutBounds=".80,5,30,30" AbsoluteLayout.LayoutFlags="XProportional"></BoxView>
+
+                </AbsoluteLayout>
+                <AbsoluteLayout BackgroundColor="LightGray" AbsoluteLayout.LayoutBounds="0,290,1,115" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="10">
+                    <Label TextColor="DeepSkyBlue" AbsoluteLayout.LayoutBounds="0,0,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Text="User Name:"/>
+                    <Label TextColor="DeepSkyBlue" AbsoluteLayout.LayoutBounds="0,18,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Text="Studied at:"/>
+                    <Label TextColor="DeepSkyBlue" AbsoluteLayout.LayoutBounds="0,38,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Text="Lives in:"/>
+                    <Label TextColor="DeepSkyBlue" AbsoluteLayout.LayoutBounds="0,58,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Text="User Name:"/>
+                    <Label TextColor="DeepSkyBlue" AbsoluteLayout.LayoutBounds="0,78,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Text="Followed by:"/>
+                </AbsoluteLayout>
+                <AbsoluteLayout>
+
+                </AbsoluteLayout>
+                <AbsoluteLayout BackgroundColor="DarkGray" AbsoluteLayout.LayoutBounds="0,415,1,40" AbsoluteLayout.LayoutFlags="WidthProportional" >
+                    <Label FontAttributes="Bold" TextColor="DeepSkyBlue" AbsoluteLayout.LayoutBounds=".5,12.5,200,50" AbsoluteLayout.LayoutFlags="XProportional" Text="About"/>
+                    <Label FontAttributes="Bold" TextColor="DeepSkyBlue" AbsoluteLayout.LayoutBounds=".9,12.5,100,50" AbsoluteLayout.LayoutFlags="XProportional" Text="Photo"/>
+                </AbsoluteLayout>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,450,1,400" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"  BackgroundColor="LightGray">
+                    
+                </AbsoluteLayout>
+            </AbsoluteLayout>
+        </AbsoluteLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

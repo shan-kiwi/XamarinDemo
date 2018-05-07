@@ -24,7 +24,10 @@ namespace XamarinDemo
             //    }
             //};
 
-            MainPage = new XamarinDemo.AbsoluteLayoutDemo();
+            //MainPage = new XamarinDemo.AbsoluteLayoutDemo();
+             MainPage = new XamarinDemo.ComplexTemplate();
+            //MainPage = new XamarinDemo.PhoneCall();
+
         }
 
 		protected override void OnStart ()
