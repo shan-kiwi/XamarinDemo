@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDemo.ListViewPage" Icon="List.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--Basic ListView-->
+            <!--<ListView x:Name="MyList" />-->
+
+            <!--ListView With Binding and Item Template-->
+            <!--<ListView x:Name="MyList" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Name"/>
+                                    <Label Text="{Binding Name}" />
+                                </StackLayout>
+                            
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Mobile"/>
+                                    <Label Text="{Binding Mobile}" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+
+            <!--ListView With TextCell & ImageCell-->
+            <!--<Label Text="User List" FontSize="Large" FontAttributes="Italic" />
+            <ListView x:Name="MyList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" Detail="{Binding Mobile}" />
+                        --><!--<ImageCell Text="{Binding Name}" Detail="{Binding Mobile}" ImageSource="{Binding UserImage}" />--><!--
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+
+            <!--ListView With ViewCell-->
+            <Label Text="User List" FontSize="Large" FontAttributes="Italic" />
+            <ListView x:Name="MyList" ItemTapped="OnListItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Grid BackgroundColor="Maroon" Padding="10">
+                                    <Label Text="{Binding ID}" />
+                                </Grid>
+
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding Name}" />
+                                    <Label Text="{Binding Mobile}" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

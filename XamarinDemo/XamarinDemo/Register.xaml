@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDemo.Register" Icon="Register.png">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Entry x:Name="UserName" Placeholder="UserName"/>
+                <Entry x:Name="Password" Placeholder="Password"/>
+                <Entry x:Name="Age" Placeholder="Age" Keyboard="Numeric"/>
+                <Entry x:Name="Email" Placeholder="Email" Keyboard="Email"/>
+                <Entry x:Name="URL" Placeholder="Url" Keyboard="Url"/>
+                <Entry x:Name="Mobile" Keyboard="Telephone" Placeholder="Mobile"/>
+                <DatePicker x:Name="DOB" MinimumDate="1950/01/01" Format="MM/dd/yyyy" />
+                <TimePicker x:Name="TP" />
+                <Picker x:Name="Location" Title="Select Location">
+                    <!--<Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>India</x:String>
+                            <x:String>USA</x:String>
+                            <x:String>UK</x:String>
+                            <x:String>China</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                    <Picker.SelectedIndex>1</Picker.SelectedIndex>-->
+                </Picker>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Not Have Account?" ForegroundColor="Gray" FontSize="Small" />
+                            <Span Text="Click Here" ForegroundColor="Red" FontSize="Medium" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button Text="Submit" Clicked="OnSubmitClicked" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

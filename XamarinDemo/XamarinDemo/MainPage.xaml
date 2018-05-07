@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinDemo"
+             x:Class="XamarinDemo.MainPage">
+
+    <ContentPage.Resources>
+        <!--<StyleSheet  Source="Styles/App.css" />-->
+    </ContentPage.Resources>
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="20, 40, 20, 20" />
+            <On Platform="Android, UWP" Value="20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout>
+        <Label Text="Enter Your Name" />
+        <Entry x:Name="UserName"  Text="Shan Muhammad" />
+        <Button x:Name="Button" Text="Click Me" Clicked="OnClicked" TextColor="Aqua" />
+        <Button x:Name="BtnReset" Text="Reset" Clicked="OnClickedReset" TextColor="Aqua" />
+        <Label x:Name="lblResult" IsEnabled="False"/>
+
+        <Entry Placeholder="Username"
+                       Text="{Binding Username}"/>
+        <Entry Placeholder="Password"
+                       Text="{Binding Password}"
+                       IsPassword="true"/>
+        <Button Text="Login" TextColor="White"
+                        BackgroundColor="#77D065"
+                        Command="{Binding LoginCommand}"/>
+    </StackLayout>
+
+</ContentPage>
+
+
