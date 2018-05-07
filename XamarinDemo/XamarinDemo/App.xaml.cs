@@ -25,8 +25,9 @@ namespace XamarinDemo
             //};
 
             //MainPage = new XamarinDemo.AbsoluteLayoutDemo();
-             MainPage = new XamarinDemo.ComplexTemplate();
+            //MainPage = new XamarinDemo.ComplexTemplate();
             //MainPage = new XamarinDemo.PhoneCall();
+            MainPage = new XamarinDemo.WebViewExmaple();
 
         }
 

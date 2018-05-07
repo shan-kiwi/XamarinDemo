@@ -8,7 +8,7 @@
             <Button Text="Go" Clicked="OpenURL"/>
             <StackLayout>
                 <ScrollView>
-                    <WebView x:Name="Browser" VerticalOptions="FillAndExpand">
+                    <WebView x:Name="Browser" VerticalOptions="FillAndExpand" HeightRequest="500">
                         
                     </WebView>
                 </ScrollView>
